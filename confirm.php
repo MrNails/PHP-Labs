@@ -54,10 +54,10 @@
                 $conn->begin_transaction();
                 try {
                     $conn->query("SET SQL_SAFE_UPDATES = 0;");
-                    $conn->query("DELETE FROM php_labs.email_confirm WHERE user_email = '{$current_user->user_email}';");
+                    $conn->query("DELETE FROM email_confirm WHERE user_email = '{$current_user->user_email}';");
                     $conn->query("SET SQL_SAFE_UPDATES = 1;");
                     $conn->query("
-                        INSERT INTO php_labs.users(firstname, secondname, login, password) 
+                        INSERT INTO users(firstname, secondname, login, password) 
                             VALUES('{$current_user->user_firstname}', '{$current_user->user_secondname}', '{$current_user->user_email}', '{$current_user->user_password}');
                     ");
 
