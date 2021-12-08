@@ -1,0 +1,11 @@
+{
+    "require": {
+        "sendgrid/sendgrid": "~7",
+        "ext-mbstring": "*"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    }
+}

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #bfac90;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+h1 > a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    background-color: #8892bf;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #29bf1d;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #bf5da4;
+}
+
+#login-btn {
+    margin-right: 15px;
+}
+
+main {
+    padding: 10px 20px;
+    flex: 1 0 auto;
+}
+
+input {
+    display: block;
+}
+
+.register-btn {
+    margin-bottom: 15px;
+}
+
+
+
+form {
+    border: 1px solid grey;
+    width: 300px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+
+form fieldset {
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+}
+
+form input {
+    height: 25px;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form button + .validation_error {
+    margin-top: 10px;
+}
+
+.validation_error {
+    color: red;
+}
+.validation_success {
+    color: green;
+}
+
+
+footer {
+    background-color: #8892bf;
+    padding: 10px 20px;
+}
