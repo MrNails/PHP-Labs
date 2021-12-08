@@ -48,7 +48,7 @@
                 $email = new \SendGrid\Mail\Mail();
                 $email->setFrom(getenv('FROM_EMAIL'), getenv('FROM_NAME'));
                 $email->setSubject("Підтвердження реєстрації");
-                $email->addTo("yra5176@gmail.com");
+                $email->addTo(getenv('FROM_EMAIL'));
                 $email->addTo($_POST['login']);
                 $email->addContent("text/plain",
                     'Привіт, Вам необхідно перейти за посиланням, щоб підтвердити реєстрацію! '
