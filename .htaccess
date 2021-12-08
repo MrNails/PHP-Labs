@@ -1,4 +1,4 @@
-SetEnv CLEARDB_DATABASE_URL mysql://root:@localhost/php_labs?reconnect=true
-SetEnv SENDGRID_API_KEY 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
-SetEnv FROM_EMAIL yra5175@gmail.com
-SetEnv FROM_NAME "Metal Dashie"
+#SetEnv CLEARDB_DATABASE_URL mysql://root:@localhost/php_labs?reconnect=true
+#SetEnv SENDGRID_API_KEY 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
+#SetEnv FROM_EMAIL yra5175@gmail.com
+#SetEnv FROM_NAME "Metal Dashie"
